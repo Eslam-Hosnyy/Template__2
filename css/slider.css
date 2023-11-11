@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------*/
+/*-------- Slider--------------*/
+.slider .slider-content .slider-img {
+  cursor: pointer;
+  padding-top: 100px;
+}
+.slider .slider-content .slider-img img {
+  width: 100%;
+}
+.scroll-bar-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s;
+}
+.slider-img:hover .scroll-bar-hidden {
+  opacity: 1;
+  visibility: visible;
+}

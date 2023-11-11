@@ -1,0 +1,96 @@
+/*-------------------------------------------------------------------*/
+/*------Footer-------*/
+.footer {
+    background-color: var(--blackcolor);
+    height: 460px;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: 34% 15% 15% 22%;
+  }
+  .footer-logo p {
+    margin: 40px 0px;
+    line-height: 2;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: var(--graycolor);
+    font-size: 13px;
+  }
+  .footer-logo img:last-child {
+    margin-left: 10px;
+  }
+  .footer-info ul li a,
+  .footer-account ul li a {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    color: var(--graycolor);
+  }
+  .footer-info ul li:first-child a,
+  .footer-account ul li:first-child a, .footer-sub h3
+   {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 17px;
+    color: var(--whitecolor);
+  }
+  .footer-sub h3{
+    padding-top: 10px;
+  }
+  .footer-info ul li a,
+  .footer-account ul li a {
+    line-height: 2.5;
+    letter-spacing: 1px;
+  }
+  .footer-sub input {
+    height: 30px;
+    width: 100%;
+    padding: 0px 5px;
+    border: none;
+    margin: 40px 0px;
+    background-color: var(--blackcolor);
+    outline: none;
+    color: var(--whitecolor);
+    border-bottom: 1px solid rgba(148, 148, 148, 0.824);
+  }
+  .footer-sub > .icon {
+    top: 78px;
+    right: 0;
+    color: var(--whitecolor);
+    font-size: 25px;
+  }
+  .footer-sub .footer-sub-links li {
+    display: inline-block;
+  }
+  .footer-sub .footer-sub-links li a i {
+    color: var(--graycolor);
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .footer-account-links li a,
+  .footer-info-links li a {
+    transform: scale3d(1, 1, 1);
+    transition: transform 0.2s, color 0.2s;
+    cursor: pointer;
+  }
+  .footer-account-links li a:hover,
+  .footer-info-links li a:hover,
+  .footer-sub-links li a i:hover{
+    transform: scale3d(1.05, 1, 1);
+    color: var(--whitecolor);
+  }
+  .footer .container >p{
+    text-align: center;
+    color: var(--whitecolor);
+    text-transform: capitalize;
+    padding: 50px 0px 0px 0px;
+    }
+    .footer .container >p a{
+      color: #ffb700;
+      letter-spacing: 1px;
+      transition: all 0.5s;
+    }
+    .footer .container >p a:hover{
+      color: var(--maincolor);
+      font-weight: bold;
+    }

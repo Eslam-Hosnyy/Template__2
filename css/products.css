@@ -1,0 +1,90 @@
+/*----------------------------------------------------------*/
+/*------ Products-------*/
+.products-items {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 30px;
+  }
+  .products .products-list {
+    display: flex;
+    justify-content: center;
+  }
+  .products .products-list li {
+    margin: 20px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: rgb(84 83 83);
+  }
+  .products-img .products-overlay {
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  .products-img .products-overlay ul {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .products-img .products-overlay ul li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--blackcolor);
+    text-align: center;
+    transition: background-color 0.5s;
+  }
+  .products-img .products-overlay ul li i {
+    color: var(--whitecolor);
+    line-height: 40px;
+    font-size: 17px;
+  }
+  .products-item,
+  .products-overlay ul li i {
+    cursor: pointer;
+  }
+  .products-item:hover .products-overlay {
+    transform: scaleX(1);
+    visibility: visible;
+    opacity: 1;
+  }
+  .products-overlay ul li:hover {
+    background-color: var(--maincolor);
+  }
+  .products-item .products-info > * {
+    margin: 10px 0px 0px 0px;
+    font-size: 14px;
+  }
+  .products-item .products-info .title {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .products-item .products-info .title {
+    transition: color 0.5s;
+  }
+  .products-item:hover .products-info .title {
+    color: var(--maincolor);
+  }
+  .products-item .products-info .fa-star {
+    color: #cdcdcd;
+  }
+  .products-item .products-info .active {
+    color: #ffb700;
+  }
+  .products-item .products-info .price {
+    font-weight: bold;
+  }
+  .products-item .products-info .dashed-price {
+    text-decoration: line-through;
+    color: var(--graycolor);
+    margin-left: 5px;
+  }
+  .products .products-scroll {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin-top: 50px;
+    padding: 0px 45px;
+  }
